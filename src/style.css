@@ -554,8 +554,232 @@ video {
   display: none;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body article {
+  background-color: #ffe8e8;
+}
+
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+body .container img {
+  height: 200px;
+  width: 200px;
+}
+
+body nav {
+  background-color: #ffe8e8;
+  padding: 10px 0;
+}
+
+body nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  background-color: #c8988c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+body nav ul li a:hover {
+  background-color: #b0746d;
+}
+
+@media (max-width: 380px) {
+  h1 {
+    margin-top: 40px;
+    font-size: 30px;
+  }
+
+  .book-carousel {
+    background-color: #FFE8E8;
+    border-radius: 5%;
+    width: 100%;
+    max-width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .book-carousel .carousel-container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .book-carousel .carousel-container .book {
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .book-carousel .carousel-container .book:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 0 10px 10px;
+    border-left-color: #ff8787;
+  }
+
+  .book-carousel .carousel-container .book:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 10px 10px 0;
+    border-right-color: #ff8787;
+  }
+
+  .book-carousel .carousel-container .book:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 0 10px 10px;
+    border-left-color: #ff8787;
+  }
+
+  .book-carousel .carousel-container .book:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 10px 10px 10px 0;
+    border-right-color: #ff8787;
+  }
+
+  .book-carousel .carousel-container .book p {
+    margin: 0;
+  }
+
+  .book-carousel .carousel-container .book img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .book-carousel .carousel-container .book .book-title, .book-carousel .carousel-container .book .book-author, .book-carousel .carousel-container .book .book-year {
+    margin: 5px 0;
+  }
+
+  .book-carousel .carousel-container .book .see_more {
+    display: inline-flex;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff7f7f;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .book-carousel .carousel-container .book .see_more img {
+    height: 30px;
+    width: 30px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffe8e8;
+    padding: 10px 0;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
