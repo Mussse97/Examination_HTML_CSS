@@ -1,4 +1,4 @@
-// Variabler för färgteman
+
 $primary-color: #f4d4d6;
 $secondary-color: #d19b9b;
 $text-color: #333;
@@ -6,7 +6,6 @@ $background-color: #fcebea;
 $black-color: #000000;
 
 #Dani{
-
 
 .about_body {
   display: flex;
@@ -73,7 +72,7 @@ article {
           padding: 30px 0 30px 0;
       }
   }
-// Layout för huvudinnehåll och sidomeny
+
 .daniell_container {
   display: flex;
   gap: 50px;
@@ -81,7 +80,7 @@ article {
   margin: 30px 30px 30px 30px;
 }
 
-// Sidomeny
+
 .daniel_sidebar {
   background-color: $primary-color;
   padding: 20px;
@@ -118,7 +117,6 @@ article {
   }
 }
 
-// Navigation
 .about_nav {
   background-color: #ffe8e8;
   padding: 10px 0 20px 0;
@@ -188,7 +186,6 @@ article {
     }
   }
 
-// Bildsektion
   .image-content {
     display: flex;
     flex-direction: column;
@@ -207,7 +204,7 @@ article {
     }
 
     img:hover {
-      transform: scale(1.1); // Gör bilden 10% större vid hovring
+      transform: scale(1.1); 
     }
 
     p {
@@ -221,7 +218,6 @@ article {
     }
   }
 
-  // Footer
   footer {
     width: 100%;                
     text-align: center;          
@@ -230,7 +226,6 @@ article {
     position: relative;          
   }
 
-  // Sektionernas bredd
   .daniel_sidebar, .main-content, .image-content {
     padding: 20px;
     border-radius: 10px;
@@ -250,7 +245,7 @@ article {
   }
 }
 
-// Responsiv design för mobila enheter med maxbredd på 380px
+
 @media (max-width: 430px) {
   .daniel_container, .daniel_sidebar, .login-container {
     display: none !important;
@@ -343,14 +338,13 @@ article {
       }
     }
   
-    // gömd checkbox som visas när den aktiveras.. Testa mer
     input[type="checkbox"]:checked ~ ul {
       display: flex;
       visibility: visible;
     }
   }
 
-  /* Justera sidhuvudet */
+  
   .about_body article {
     display: flex;
     flex-direction: column;
@@ -358,8 +352,6 @@ article {
   }
 
   
-  
-  /* Justering av huvudinnehållet */
   .main-content {
     padding: 10px;
   }
@@ -376,7 +368,6 @@ article {
     margin-bottom: 15px !important;
   }
 
-  /* Justera bild och text under artikeln */
   .image-content {
     display: flex;
     flex-direction: column;
@@ -396,7 +387,6 @@ article {
     text-align: justify;
   }
 
-  /* Fotnot */
   footer {
     font-size: 0.8rem;
     text-align: center;

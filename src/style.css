@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-*, ::before, ::after{
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -54,7 +52,7 @@
   --tw-contain-style:  ;
 }
 
-::backdrop{
+::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -556,86 +554,86 @@ video {
   display: none;
 }
 
-.container{
+.container {
   width: 100%;
 }
 
-@media (min-width: 640px){
-  .container{
+@media (min-width: 640px) {
+  .container {
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px){
-  .container{
+@media (min-width: 768px) {
+  .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px){
-  .container{
+@media (min-width: 1024px) {
+  .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px){
-  .container{
+@media (min-width: 1280px) {
+  .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px){
-  .container{
+@media (min-width: 1536px) {
+  .container {
     max-width: 1536px;
   }
 }
 
-.mb-4{
+.mb-4 {
   margin-bottom: 1rem;
 }
 
-.mb-5{
+.mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.w-full{
+.w-full {
   width: 100%;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 
-.rounded-lg{
+.rounded-lg {
   border-radius: 0.5rem;
 }
 
-.text-2xl{
+.text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 600;
 }
 
-.italic{
+.italic {
   font-style: italic;
 }
 
@@ -1896,15 +1894,11 @@ footer {
     visibility: visible;
   }
 
-  /* Justera sidhuvudet */
-
   .about_body article {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  /* Justering av huvudinnehållet */
 
   .main-content {
     padding: 10px;
@@ -1921,8 +1915,6 @@ footer {
     text-align: justify;
     margin-bottom: 15px !important;
   }
-
-  /* Justera bild och text under artikeln */
 
   .image-content {
     display: flex;
@@ -1942,8 +1934,6 @@ footer {
     padding: 10px;
     text-align: justify;
   }
-
-  /* Fotnot */
 
   footer {
     font-size: 0.8rem;
@@ -2311,7 +2301,6 @@ body .nyheter-nav .nyheter-ul li a:hover {
     text-align: center;
     margin: 0 auto;
     position: relative;
-    /* Texten som visas i overlayen */
   }
 
   body .book-carousel .carousel-container .book:nth-child(1)::after {
@@ -2458,19 +2447,19 @@ body .nyheter-nav .nyheter-ul li a:hover {
     padding-left: 2rem;
   }
 
-  .lg\:mb-0{
+  .lg\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .lg\:w-1\/2{
+  .lg\:w-1\/2 {
     width: 50%;
   }
 
-  .lg\:flex-row{
+  .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:pl-8{
+  .lg\:pl-8 {
     padding-left: 2rem;
   }
 }

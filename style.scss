@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255); // Soft pink background
+  background-color: rgb(255, 255, 255); 
   color: #4B3F3E;
   text-align: center;
   margin: 0;
@@ -196,10 +196,10 @@ body {
           padding-left: 15px;
           padding-top: 25px;
           overflow: scroll;
-          -ms-overflow-style: none; // Gömd scrollbar för firefox, edge  
+          -ms-overflow-style: none; 
           scrollbar-width: none;  
       }
-      .text-overlay::-webkit-scrollbar { // gömd scrollbar för opera, chrome och safari
+      .text-overlay::-webkit-scrollbar { 
         display: none;
     }
 
@@ -227,7 +227,7 @@ body {
           justify-content: center;
 
           @media (min-width: 1024px) {
-              flex-direction: row; // Horizontal layout for large screens
+              flex-direction: row; 
           }
 
           .news-details {
@@ -341,7 +341,6 @@ body {
           }
         }
       
-        // gömd checkbox som visas när den aktiveras.. Testa mer
         input[type="checkbox"]:checked ~ .nyheter-ul {
           display: flex;
           visibility: visible;
@@ -376,7 +375,7 @@ body {
 
             .book {
                 scroll-snap-align: center;
-                flex: 0 0 100%; // Bok tar upp 80% av viewport bredd 
+                flex: 0 0 100%; 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -488,7 +487,6 @@ body {
                   z-index: 10;
               }
               
-              /* Texten som visas i overlayen */
               .overlay-info .info-text {
                   font-size: 13px;
                   line-height: 1.6;
@@ -517,8 +515,7 @@ body {
         }
         
     }
-    
-    
+        
     footer{
         display: flex;
         justify-content: center;  
