@@ -251,7 +251,7 @@ article {
 }
 
 // Responsiv design för mobila enheter med maxbredd på 380px
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   .daniel_container, .daniel_sidebar, .login-container {
     display: none !important;
   }

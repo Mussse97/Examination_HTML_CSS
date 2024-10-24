@@ -214,7 +214,7 @@
           }
 
 
-@media (max-width: 380px){
+@media (max-width: 430px){
 
     .event-nav {
         background-color: #ffe8e8;
@@ -307,8 +307,11 @@
         }
       }
       .event{
+        display: flex;
+        flex-direction: column;
+        margin-left: 27px;
         margin-top: 25px;
-        margin-left: 6px;
+        
       }
 }
     
