@@ -7,7 +7,7 @@
     display: none;
 }
 .event-body {
-  background-color: rgb(255, 255, 255); // Soft pink background
+  background-color: rgb(255, 255, 255); 
   text-align: center;
   margin: 0;
 
@@ -86,18 +86,14 @@
   }
 }
 
-
-// Huvudlayout med CSS Grid för layout med två kolumner
 #main-body {
     display: grid;
-    grid-template-columns: 1fr 3fr; // Sidofältet tar 1 del, huvudinnehållet tar 3 delar
+    grid-template-columns: 1fr 3fr; 
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto; // Centrera layouten på sidan
+    margin: 0 auto; 
 }
-
-
 
 
 .sidebar {
@@ -132,8 +128,6 @@
     }
 }
 
-
-    // Informationsruta
     section.info-box {
         background-color: #fff; 
         padding: 15px;
@@ -292,7 +286,6 @@
           }
         }
       
-        // gömd checkbox som visas när den aktiveras.. Testa mer
         input[type="checkbox"]:checked ~ .event-ul {
           display: flex;
           visibility: visible;
