@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html id="html-root" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="bokhandel, böcker, evenemang, Pärmar & Poesi"> <!--Mer SEO? Verkar vara utdaterat, värt att fråga Rachel?-->
+    <link type="text/css" rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Pärmar & Poesi</title>
+    <meta name="description" content="Välkommen till Pärmar & Poesi, din lokala bokhandel. Upptäck böcker och delta i evenemang som Bok & Bubbel och Skrivarverkstad."> <!--Mer SEO?-->
+    <link type="text/css" rel="stylesheet" href="src/style.css">
+</head>
+<body class="event-body">
+
+        <!--  Headern  -->
+    <article>
+        <section class="container">
+                <img src="public/logo1.png" alt="Pärmar & Poesi Logo">
+        </section>
+        <nav class="event-nav">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="event-ul">
+                <li><a href="index.html">Nyheter</a></li>
+                <li><a href="#">Evenemang</a></li>
+                <li><a href="omOss.html">Om oss</a></li>
+            </ul>
+        </nav>
+
+        <aside class="login-container">
+            <section>
+            <p class="font-bold pbox"><a href="#">Logga in</p></a>
+            <img src="public/profile.png" alt="Profilbild" class="profilepic">
+            </section>
+        </aside>
+    </article>
+
+<main id="main-body">
+
+        <!-- Vänstra sidomenyn -->
+
+        <aside class="sidebar">
+                <h2 class="text-2xl font-bold mb-4">Se mer här</h2>
+                <ul>
+                    <li class="font-bold"><a href="#">Top 10 Actionböcker</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Fantasyböcker</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Sci-Fi-böcker</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Romansböcker</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Thrillerböcker</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Historiska romaner</a></li>
+                    <li class="font-bold"><a href="#">Top 10 Deckare</a></li>
+                 </ul>
+            <section class="info-box">
+                    <img src="public/brittmarie.png" alt="Britt-Marie tipsar om sina bästa böckerna" class="info-image">
+                    <p class="font-bold"><a href="#">Så blev Britt-Marie av med höjdskräcken - <br>Läs om hennes bästa boktips!</a></p>
+            </section>
+        </aside>
+
+        <!-- Huvudsektion -->
+
+    <section class="events-section">
+        <article class="event">
+            <header class="event-header">
+                <h2 class="text-2xl font-bold mb-4">Bok & Bubbel - Kväll för kärlek till litteratur</h2>
+            </header>
+            <section class="event-content">
+                <figure class="event-image-container w-full lg:w-1/2 mb-5 lg:mb-0">
+                    <img src="public/party.png" alt="Deltagarna njöt av Bok & Bubbel-evenemanget med drinkar och böcker" class="event-image rounded-lg">
+                    <figcaption>Bild på när deltagarna glatt gör sig redo för att skåla för en lyckad kväll.</figcaption> <!-- Eventbilderna placeras i ett <figure>-element med en tillhörande <figcaption>, som ger en bildtext till bilden, vilket ger användarna mer sammanhang och gör bilderna mer meningsfulla och tillgängliga. -->
+                </figure>
+                <section class="event-details w-full lg:w-1/2 lg:pl-8">
+                    <p>Ta en paus från vardagen och njut av en underbar kväll i litteraturens tecken, med lite bubbel vid sidan! På "Bok & Bubbel" bjuder vi in till ett mingelevenemang där du kan möta likasinnade bokälskare, lyssna på intressanta bokdiskussioner och upptäcka nya författare och böcker. Låt dig inspireras av kvällens gäster och koppla av i en avslappnad atmosfär med ett glas i handen och nya berättelser att upptäcka.</p>
+                    <p class="font-bold">Datum: 6 januari 2025</p>
+                    <p class="font-bold">Plats: Hemligstämplad - Inbjudan gäller</p>
+                </section>
+            </section>
+        </article>
+    
+        <article class="event">
+            <header class="event-header">
+                <h2 class="text-2xl font-bold mb-4">Skrivarverkstad - Skapa din egen roman</h2>
+            </header>
+            <section class="event-content">
+                <section class="event-details w-full lg:w-1/2 lg:pl-8">
+                    <p>Har du en historia som bara väntar på att bli berättad? Kom med på vår interaktiva skrivarverkstad där du får chansen att utforska din kreativa sida och börja bygga din egen roman! Tillsammans med erfarna författare och skrivcoacher, får du verktyg för att utveckla karaktärer, skapa spännande intriger och hitta din unika röst. Oavsett om du är nybörjare eller har skrivit förut, är detta ett perfekt tillfälle att ta ditt skrivande till nästa nivå. Anmäl dig idag – din berättelse väntar!</p>
+                    <p class="font-bold">Datum: 12 mars 2025</p>
+                    <p class="font-bold">Plats: Drottninggatan 9, Stockholm</p>
+                </section>
+                <figure class="event-image-container">
+                    <img src="public/workshop.jpeg" alt="Deltagare som engagerar sig i evenemanget Skrivarverkstad" class="event-image rounded-lg">
+                    <figcaption>Bild på fokuserade deltagare.</figcaption>
+                </figure>
+            </section>
+        </article>
+
+        <article class="event">
+            <header class="event-header">
+                <h2 class="text-2xl font-bold mb-4">Bokbytarkväll - Dela din favoritbok och hitta en ny skatt</h2>
+            </header>
+            <section class="event-content">
+                <figure class="event-image-container w-full lg:w-1/2 mb-5 lg:mb-0">
+                    <img src="public/bokbyte.jpeg" alt="Deltagarna var entustiastiska över bokbyte" class="event-image rounded-lg">
+                    <figcaption>Bild på entustiastiska deltagare som byter böcker.</figcaption> 
+                </figure>
+                <section class="event-details w-full lg:w-1/2 lg:pl-8">
+                    <p>Damma av dina älskade böcker och dela med dig av dem till andra på vår bokbytarkväll! Här får du möjligheten att byta böcker med andra bokentusiaster, upptäcka nya författare och genrer, och samtala om litteratur i en avslappnad och trivsam miljö. Ta med en bok du tycker om, byt den mot något nytt och oväntat, och låt en ny värld öppna sig för dig.</p>
+                    <p class="font-bold">Datum: 5 april 2025</p>
+                    <p class="font-bold">Plats: Trädgårdsföreningen, Linköping</p>
+                </section>
+            </section>
+        </article>
+
+    </section>
+</main>
+
+    <footer>Pärmar & Poesi - © Copyright</footer>
+    
+</body>
+
+</html>

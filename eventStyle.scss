@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#events, .event-card{
+    display: none;
+}
+.event-body {
+  background-color: rgb(255, 255, 255); // Soft pink background
+  text-align: center;
+  margin: 0;
+
+  .login-container {
+    display: flex;
+
+    section:nth-child(1) {
+        background-color: #ffffff;
+        margin-right: 50px;
+        padding: 10px 0 10px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 10px;
+       
+    }
+}
+
+.profilepic {
+    max-width: 20px;
+    margin-right: 20px;
+}
+  
+  article{
+
+      background-color:#ffe8e8;
+      }
+
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%; 
+      margin: 0 auto; 
+      width: 100%; 
+      
+      
+      img {
+        height: 200px;
+        width: 400px;
+        padding: 30px 0 30px 0;
+    }
+    
+
+  }
+
+  nav {
+      background-color: #ffe8e8; 
+      padding: 10px 0;
+
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                background-color: #c8988c;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 1rem;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: #b0746d;
+                }
+            }
+        }
+      }
+  }
+}
+
+
+// Huvudlayout med CSS Grid för layout med två kolumner
+#main-body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; // Sidofältet tar 1 del, huvudinnehållet tar 3 delar
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; // Centrera layouten på sidan
+}
+
+
+
+
+.sidebar {
+    background-color: #ffe0e0;
+    color: #4B3F3E;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    margin-bottom: 20px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    
+        li {
+          display: flex;               
+          align-items: center;         
+          padding: 10px;               
+          margin-bottom: 10px;
+          text-align: left;           
+          background-color: #fff;      
+          border-radius: 8px;          
+          
+          &:hover {
+            background-color: #b0746d; 
+            border-radius: 8px;
+            color:white;
+          }
+        }
+    }
+}
+
+
+    // Informationsruta
+    section.info-box {
+        background-color: #fff; 
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+    .info-image {
+        width: 100%; 
+        height: auto; 
+        border-radius: 8px; 
+        margin-bottom: 20px; 
+    }
+
+    p {
+        font-size: 14px;
+        color: #4B3F3E;
+    }
+}
+
+
+
+
+.events-section {
+    background-color: #ffffff;
+    padding: 0px;
+    border-radius: 8px;
+
+    .event {
+        background-color: #D9D9D9;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 100%;
+
+        h2 {
+            color: #4B3F3E;
+            font-size: 24px;
+        }
+
+        p {
+            color: #4B3F3E;
+        }
+
+        .event-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media (min-width: 1024px) {
+                flex-direction: row; 
+            }
+
+            .event-details {
+                margin-left: 20px;
+                margin-right: 40px;
+            }
+
+            .event-image-container {
+                max-width: 300px;
+            }
+            .event-image{
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+    
+            }
+        }
+        
+        footer {
+            width: 100%;                
+            text-align: center;          
+            padding: 20px;               
+            background-color: #f5f5f5;   
+            position: relative;          
+          }
+
+
+@media (max-width: 380px){
+
+    .event-nav {
+        background-color: #ffe8e8;
+        padding: 10px 0;
+        position: relative;
+    
+      
+        input[type="checkbox"] {
+          display:block;
+        }
+      
+        .menu-icon {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          background-color: #ff8787;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: relative;
+          z-index: 1000;
+          margin: 0 auto;
+      
+          span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+            transition: all 0.3s ease;
+          }
+        }
+      
+    
+        input[type="checkbox"]:checked + .menu-icon span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+      
+        input[type="checkbox"]:checked + .menu-icon span:nth-child(2) {
+          opacity: 0;
+        }
+      
+        input[type="checkbox"]:checked + .menu-icon span:nth-child(3) {
+          transform: rotate(-45deg) translate(10px, -10px);
+        }
+      
+        .event-ul {
+          flex-direction: row;
+          visibility: hidden;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: #ff8787;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+         
+      
+          li {
+            margin: 10px 0;
+      
+            a {
+              text-decoration: none;
+              background-color: #ffe8e8;
+              color: black;
+              padding: 10px 20px;
+              border-radius: 5px;
+              font-size: 13px;
+              
+            }
+          }
+        }
+      
+        // gömd checkbox som visas när den aktiveras.. Testa mer
+        input[type="checkbox"]:checked ~ .event-ul {
+          display: flex;
+          visibility: visible;
+        }
+      }
+    
+      .events-section{
+        width: 330px !important;
+        .event-image-container{
+            width: 200px;
+            height: auto;
+        }
+      }
+      .event{
+        margin-top: 25px;
+        margin-left: 6px;
+      }
+}
+    

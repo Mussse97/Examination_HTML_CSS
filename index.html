@@ -1,63 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <meta name="description" content="Pärmar & Poesi - Din lokala bokhandel med boknyheter och evenemang.">
+    <meta name="keywords" content="bokhandel, böcker, evenemang, Pärmar & Poesi">
+    <link type="text/css" rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Pärmar & Poesi</title>
+    <link type="text/css" rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
-    <article>
+<!--------------------------------Desktop version Amanda---------------------------------------------->
+     <!--  Headern  -->
+     <article>
         <section class="container">
-                <img src="public/Parmar__Poesi_1.png" alt="Pärmar & Poesi Logo">
+            <img src="public/logo1.png" alt="Pärmar & Poesi Logo">
         </section>
-        <nav>
-            <ul>
-                <li><a href="#">Nyheter</a></li>
-                <li><a href="#">Evenemang</a></li>
-                <li><a href="#">Om oss</a></li>
+        <nav class="nyheter-nav">
+            <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            <ul class="nyheter-ul">
+                <li><a href="index.html">Nyheter</a></li>
+                <li><a href="evenemang.html">Evenemang</a></li>
+                <li><a href="omOss.html">Om oss</a></li>
             </ul>
         </nav>
+
+        <aside class="login-container">
+            <section>
+                <p class="font-bold pbox"><a href="#">Logga in</p></a>
+            <img src="public/profile.png" alt="Profilbild" class="profilepic">
+            </section>
+        </aside>
+
     </article>
-    <h1 class="font-bold">NYHETER!</h1>
-    <section class="book-carousel">
+
+    <main id="index-main">
+        <!-- Vänstra sidomenyn -->
+        <aside class="sidebar">
+            <h2 class="text-2xl font-bold mb-4">Se mer här</h2>
+            <ul>
+                <li><a href="#">Top 10 Actionböcker</a></li>
+                <li><a href="#">Top 10 Fantasyböcker</a></li>
+                <li><a href="#">Top 10 Sci-Fi-böcker</a></li>
+                <li><a href="#">Top 10 Romansböcker</a></li>
+                <li><a href="#">Top 10 Thrillerböcker</a></li>
+                <li><a href="#">Top 10 Historiska romaner</a></li>
+                <li><a href="#">Top 10 Deckare</a></li>
+            </ul>
+        </aside>
+
+        <!-- Huvudsektion (Centrerat innehåll) -->
+        <section class="news-section">
+            <article class="news">
+                <header class="news-header">
+                    <h2 class="text-2xl font-bold mb-4">Nyheter</h2>
+                </header>
+                <section class="news-content flex flex-col lg:flex-row items-center justify-between">
+                    <figure class="news-image-container w-full lg:w-1/2 mb-5 lg:mb-0 container">
+                        <img src="public/Book3.png" alt="Bok Orchid" class="news-image rounded-lg">
+                        <p class="text-overlay">En före detta MI6-agent, Amelia Grant, går under kodnamnet "Orkidé" och
+                            leder en grupp elitagenter i jakten på en osynlig fiende. Men när en förrädare inom
+                            organisationen avslöjas, inser Amelia att någon nära henne spelar ett farligt dubbelspel.
+                            Varje drag kan vara hennes sista, och sanningen om attackerna är häpnadsväckande.</p>
+                        <figcaption class="font-bold">Codenaame Orichiid</figcaption>
+                        <figcaption class="italic">Michelle Obama <br>2023</figcaption>
+                    </figure>
+                    <figure class="news-details w-full lg:w-1/2 lg:pl-8 container">
+                        <img src="public/Book2.png" alt="Bok Shadows" class="news-image rounded-lg">
+                        <p class="text-overlay">I en värld där magi är förbjuden och glömd, upptäcker den unga studenten
+                            Arlen att han bär på ett uråldrigt arv – förmågan att kontrollera skuggorna. När han av
+                            misstag släpper lös en mörk kraft som hotar riket. Medan Arlen kämpar med sitt mörka arv,
+                            börjar en konspiration ta form som kan förändra hela världen.</p>
+                        <figcaption class="font-bold">The Legacy of Shadows</figcaption>
+                        <figcaption class="italic">Gunilla Persson <br>2024</figcaption>
+                    </figure>
+                    <figure class="news-details w-full lg:w-1/2 lg:pl-8 container">
+                        <img src="public/Book1.png" alt="Bok Featherfall" class="news-image rounded-lg">
+                        <p class="text-overlay">När Mira återvänder till sin barndomsstad, upptäcker hon hemligheter i
+                            familjens historia. Fjädrar och brev som hon hittar på vinden leder henne till en förlorad
+                            kärlekshistoria mellan hennes föräldrar och en främling. Medan hon försöker navigera mellan
+                            nutidens ansvar och det förflutnas smärta, börjar hennes livsval ifrågasättas.
+                        </p>
+                        <figcaption class="font-bold">Featherfall</figcaption>
+                        <figcaption class="italic">Dora the Book manager <br>Kommer snart - 2025</figcaption>
+                    </figure>
+
+                </section>
+            </article>
+        </section>
+
+    </main>
+<!-----------------------------------------Mobil version Musse--------------------------------------------->
+<article class="top">
+    <h1 id="hide-desktop" class="font-bold">NYHETER!</h1>
+    <p>Upptäck de senaste och mest populära böckerna bland läsare i Sverige! Håll dig uppdaterad med de hetaste titlarna och nya litterära pärlor.</p>
+</article>    
+<article class="book-carousel">
         <section class="carousel-container">
           <section class="book">
+            <p class="number">1.</p>
             <img src="public/Book2.png" alt="Bok 1">
-            <p class="font-semibold">Codename Orchid</p>
-            <p class="italic">Michelle Obama</p>
-            <p class="italic">2023</p>
-            <section>
-                <a href="#" class="see_more">
-                    <img src="public/open_book.png" alt="">Se mer</a>
+            <p class="font-semibold">The Legacy of Shadows</p>
+            <p class="italic">Gunilla persson</p>
+            <p class="italic">2024</p>
+            <input type="checkbox" id="book-info-1" class="toggle-info" />
+
+            <!-- Label som agerar knapp -->
+            <label for="book-info-1" class="see_more">Se mer</label>
+        
+            <!-- Dold overlay information -->
+            <section class="overlay-info">
+                <p class="info-text">
+                    I en värld där magi är förbjuden och glömd, upptäcker den unga studenten
+                    Arlen att han bär på ett uråldrigt arv – förmågan att kontrollera skuggorna. När han av
+                     misstag släpper lös en mörk kraft som hotar riket. Medan Arlen kämpar med sitt mörka arv,
+                    börjar en konspiration ta form som kan förändra hela världen.
+                </p>
+                <label for="book-info-1" class="close-overlay">Stäng</label> <!-- Använd samma label för att stänga -->
             </section>
           </section>
           <section class="book">
+            <p class="number">2.</p>
             <img src="public/Book1.png" alt="Bok 2">
             <p class="font-semibold">Featherfall</p>
             <p class="italic">Dora the book manager</p>
             <p class="italic">Kommer snart - 2025</p>
-            <section>
-                <a href="#" class="see_more">Se mer</a>
+            <input type="checkbox" id="book-info-2" class="toggle-info" />
+
+            <!-- Label som agerar knapp -->
+            <label for="book-info-2" class="see_more">Se mer</label>
+        
+            <!-- Dold overlay information -->
+            <section class="overlay-info">
+                <p class="info-text">
+                    Featherfall is a compelling story about a woman returning to her childhood town and uncovering secrets about her family. Through letters and memories, she discovers her parents' lost love story. Mira must now navigate between her present life and past traumas.
+                </p>
+                <label for="book-info-2" class="close-overlay">Stäng</label> <!-- Använd samma label för att stänga -->
             </section>
           </section>
           <section class="book">
+            <p class="number">3.</p>
             <img src="public/Book3.png" alt="Bok 2">
-            <p class="font-semibold">The Legacy of Shadows</p>
+            <p class="font-semibold">Codename Orchid </p>
             <p class="italic">Gunilla persson</p>
-            <p class="italic">2024</p>
-            <section>
-                <a href="#" class="see_more">Se mer</a>
+            <p class="italic">2023</p>
+            <input type="checkbox" id="book-info-3" class="toggle-info" />
+
+            <!-- Label som agerar knapp -->
+            <label for="book-info-3" class="see_more">Se mer</label>
+        
+            <!-- Dold overlay information -->
+            <section class="overlay-info">
+                <p class="info-text">
+                    En före detta MI6-agent, Amelia Grant, går under kodnamnet "Orkidé" och
+                    leder en grupp elitagenter i jakten på en osynlig fiende. Men när en förrädare inom
+                    organisationen avslöjas, inser Amelia att någon nära henne spelar ett farligt dubbelspel.
+                    Varje drag kan vara hennes sista, och sanningen om attackerna är häpnadsväckande
+                </p>
+                <label for="book-info-3" class="close-overlay">Stäng</label> 
             </section>
           </section>
            
         </section>
-      </section>
+    </article>
       <footer>
         <h2 class="italic">Pärmar & Poesi - © Copyright</h2>
     </footer>
 </body>
+
 </html>
