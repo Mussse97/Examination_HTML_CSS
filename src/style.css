@@ -1473,7 +1473,7 @@ footer {
   position: relative;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   .event-nav {
     background-color: #ffe8e8;
     padding: 10px 0;
@@ -1562,8 +1562,10 @@ footer {
   }
 
   .event {
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
     margin-top: 25px;
-    margin-left: 6px;
   }
 }
 
@@ -1800,7 +1802,7 @@ footer {
   flex-basis: 25%;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   .daniel_container, .daniel_sidebar, .login-container {
     display: none !important;
   }
@@ -2176,7 +2178,7 @@ body .nyheter-nav .nyheter-ul li a:hover {
   max-width: 300px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 430px) {
   body .sidebar,
   body .news-section,
   body .login-container {
