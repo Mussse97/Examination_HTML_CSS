@@ -195,6 +195,9 @@ body {
           min-width: 220px;
           padding-left: 15px;
           padding-top: 25px;
+          overflow: scroll;
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
       }
 
       .container:hover .text-overlay {

@@ -2131,6 +2131,11 @@ body .nyheter-nav .nyheter-ul li a:hover {
   min-width: 220px;
   padding-left: 15px;
   padding-top: 25px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .news-section .news .container:hover .text-overlay {
