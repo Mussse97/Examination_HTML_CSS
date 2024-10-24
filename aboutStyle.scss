@@ -1,0 +1,410 @@
+// Variabler för färgteman
+$primary-color: #f4d4d6;
+$secondary-color: #d19b9b;
+$text-color: #333;
+$background-color: #fcebea;
+$black-color: #000000;
+
+#Dani{
+
+
+.about_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+article {
+  background-color: $background-color;
+  width: 100%;
+
+  .daniel_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    img {
+      height: 200px;
+      width: 350px;
+    }
+  }
+  .login-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    section:nth-child(1) {
+        background-color: #ffffff;
+        margin-right: 50px;
+        padding: 10px 0 10px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        gap: 10px;
+      
+    }
+  }
+
+  .profilepic {
+    max-width: 20px;
+    margin-right: 20px;
+  }
+}
+
+  .container{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0 auto;
+      width: 100%;
+
+      img {
+          height: 200px;
+          width: 400px;
+          padding: 30px 0 30px 0;
+      }
+  }
+// Layout för huvudinnehåll och sidomeny
+.daniell_container {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+  margin: 30px 30px 30px 30px;
+}
+
+// Sidomeny
+.daniel_sidebar {
+  background-color: $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+
+  h2 {
+    color: $black-color;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: center;
+    background-color: $background-color;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  
+    li {
+      margin-bottom: 30px;
+  
+      img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.1); 
+        }
+      }
+    }
+  }
+}
+
+// Navigation
+.about_nav {
+  background-color: #ffe8e8;
+  padding: 10px 0 20px 0;
+  width: 100%;
+
+  ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      width: 100%;
+
+      li {
+          a {
+              text-decoration: none;
+              background-color: #c8988c;
+              color: white;
+              padding: 10px 20px;
+              border-radius: 5px;
+              font-size: 1rem;
+              transition: background-color 0.3s;
+
+              &:hover {
+                  background-color: #b0746d;
+              }
+          }
+      }
+  }
+}
+// Huvudinnehåll
+  .main-content {
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 2.5em;
+      background-color: $background-color;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 80px;
+    }
+
+    .first-paragraph {
+      font-size: 1.5em;
+      color: $text-color;
+      text-align: center;
+      background-color: $background-color;
+      border-radius: 10px;
+      padding: 10px;
+      padding-bottom: 60px;
+      margin-bottom: 120px;
+    }
+
+    .second-paragraph {
+      font-size: 1.5em;
+      color: $text-color;
+      text-align: center;
+      background-color: $background-color;
+      border-radius: 10px;
+      padding: 10px;
+      padding-bottom: 80px;
+    }
+  }
+
+// Bildsektion
+  .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: $primary-color;
+    padding: 20px;
+    border-radius: 10px;
+
+    img {
+      max-width: 350px;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 50px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.1); // Gör bilden 10% större vid hovring
+    }
+
+    p {
+      background-color: $background-color;
+      font-style: italic;
+      color: $black-color;
+      text-align: left;
+      font-size: 1;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  // Footer
+  footer {
+    width: 100%;                
+    text-align: center;          
+    padding: 20px;               
+    background-color: #f5f5f5;   
+    position: relative;          
+  }
+
+  // Sektionernas bredd
+  .daniel_sidebar, .main-content, .image-content {
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: 25%;
+  }
+
+  .daniel_sidebar {
+    flex-basis: 20%;
+  }
+
+  .main-content {
+    flex-basis: 60%;
+  }
+
+  .image-content {
+    flex-basis: 25%;
+  }
+}
+
+// Responsiv design för mobila enheter med maxbredd på 380px
+@media (max-width: 380px) {
+  .daniel_container, .daniel_sidebar, .login-container {
+    display: none !important;
+  }
+  
+
+  .daniell_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about_nav {
+    background-color: #ffe8e8;
+    padding: 10px 0;
+    position: sticky;
+
+   
+    input[type="checkbox"] {
+      display:block;
+    }
+  
+    .menu-icon {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      background-color: #ff8787;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      z-index: 1000;
+      margin: 0 auto;
+  
+      span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+      }
+    }
+  
+
+    input[type="checkbox"]:checked + .menu-icon span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    input[type="checkbox"]:checked + .menu-icon span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    input[type="checkbox"]:checked + .menu-icon span:nth-child(3) {
+      transform: rotate(-45deg) translate(10px, -10px);
+    }
+  
+    .about_ul {
+      flex-direction: row;
+      visibility: hidden;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #ff8787;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100% ;
+      text-align: center;
+     
+  
+      li {
+        margin: 10px 0;
+  
+        a {
+          text-decoration: none;
+          background-color: #ffe8e8 !important;
+          color: black !important;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 15px !important ;
+          
+        }
+      }
+    }
+  
+    // gömd checkbox som visas när den aktiveras.. Testa mer
+    input[type="checkbox"]:checked ~ ul {
+      display: flex;
+      visibility: visible;
+    }
+  }
+
+  /* Justera sidhuvudet */
+  .about_body article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  
+  /* Justering av huvudinnehållet */
+  .main-content {
+    padding: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px !important;
+  }
+
+  .main-content p {
+    font-size: 15px !important;
+    text-align: justify;
+    margin-bottom: 15px !important;
+  }
+
+  /* Justera bild och text under artikeln */
+  .image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 10%;
+  }
+
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-content p {
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  /* Fotnot */
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+
+  .pbox {
+    font-size: 0.9rem;
+  }
+}
