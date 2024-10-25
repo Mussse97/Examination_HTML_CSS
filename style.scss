@@ -2,15 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+// Mixins ---------------------------------------------------->
 @mixin center{
   display: flex;
   justify-content: center;
   align-items: center
 }
-
+// Scss filer för andra sidor ------------------------------------------------>
 @import "eventStyle";
 @import "aboutStyle";
-
+// ----------------------------------------------------> Desktop css
 *{
   font-family: "Montserrat", serif;
 }
